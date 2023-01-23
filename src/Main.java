@@ -33,15 +33,15 @@ public class Main {
         System.out.println();
 
         int population = 12_000_000;
-        int birth = 120 * 17;
-        int death = 120 * 8;
+        int birth = 1200 * 17;
+        int death = 1200 * 8;
         int growth = birth - death;
         int year = 2022;
         while (year < 2032) {
             year++;
             population = population + growth;
+            System.out.println("Год " + year + " численность населения составляет " + population);
         }
-        System.out.println("Год " + year + " численность населения составляет " + population);
 
         int salary = 15000;
         int totalSecond = 0;
@@ -66,7 +66,7 @@ public class Main {
         int past = now - 200;
         int future = now +100;
         for (int u = past; u<future; u++){
-            if (u % 79 ==0);{
+            if (u % 79 ==0) {
                 System.out.println(u);
             }
         }
